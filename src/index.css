@@ -83,3 +83,9 @@ input[type="text"].firma:focus
     color: var(--gs-primary);
     font-weight: bold;
 }
+
+.icono-tab
+{
+    height: 1.5rem;
+    width: auto;
+}
