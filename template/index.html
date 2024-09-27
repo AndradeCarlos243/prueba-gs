@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/css/utilidades.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>PRUEBA GS</title>
+</head>
+<body>
+    <nav class="navbar bg-light sticky-top p-0 shadow-sm">
+        <div class="container-fluid g-0">
+            <div class="ms-0 bg-gs-primary">
+                <a class="btn-nav" data-bs-toggle="offcanvas" data-bs-target="#off-canvas-nav" aria-controls="off-canvas-nav" aria-label="Toggler offcanvas lateral">
+                    <img id="img-hamburguesa" src="./src/img/hamburguesa.svg" class="" alt="...">
+                </a>
+            </div>
+            <div class="me-auto">
+                <a class="btn-nav">
+                    <img id="img-home" class="" src="./src/img/home.svg" class="" alt="...">
+                </a>
+            </div>
+            <div class="me-0 ms-auto">
+                <a class="btn-nav">
+                    <img id="img-user" src="./src/img/agregar.svg" class="rounded-circle border border-secondary" alt="...">
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="off-canvas-nav" aria-labelledby="lbl-off-canvas">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="lbl-off-canvas">Opciones</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container-fluid">
+        <div class="row row-cols-1">
+            <div class="col p-3">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link nav-gs active" id="nav-datos-tab" data-bs-toggle="tab" data-bs-target="#nav-datos" type="button" role="tab" aria-controls="nav-datos" aria-selected="true">Datos</button>
+                        <button class="nav-link nav-gs" id="nav-plan-tab" data-bs-toggle="tab" data-bs-target="#nav-plan" type="button" role="tab" aria-controls="nav-plan" aria-selected="false">Plan</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-datos" role="tabpanel" aria-labelledby="nav-datos-tab" tabindex="0">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col p-3 mt-auto">
+                                <div class="row row-cols-1">
+                                    <div class="col my-2">
+                                        <label for="txt-id-orc" class="form-label">ID Sistema ORC's</label>
+                                        <input type="text" class="form-control" id="txt-id-orc" disabled>
+                                    </div>
+                                    <div class="col mb-2">
+                                        <label for="txt-nombre-proyecto" class="form-label">Nombre del proyecto</label>
+                                        <input type="text" class="form-control" id="txt-nombre-proyecto" disabled>
+                                    </div>
+                                    <div class="col mb-2">
+                                        <label for="txt-desc-proyecto" class="form-label">Descripcion del proyecto</label>
+                                        <input type="text" class="form-control" id="txt-desc-proyecto" disabled>
+                                    </div>
+                                    <div class="col mb-2">
+                                        <label for="sel-obj-proyecto" class="form-label">Objetivos a los que contribuye el proyecto</label>
+                                        <select id="sel-obj-proyecto" class="form-select" aria-label="Select de objetivos del proyecto">
+                                            <option value="" selected disabled></option>
+                                            <option value="1">DATO 1</option>
+                                            <option value="2">DATO 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col mb-2">
+                                        <div class="row row-cols-1 row-cols-md-2">
+                                            <div class="col">
+                                                <label for="txt-fecha-inicio" class="form-label">Fecha de inicio</label>
+                                                <input type="text" class="form-control datepicker" id="txt-fecha-inicio">
+                                            </div>
+                                            <div class="col">
+                                                <label for="txt-fecha-fin" class="form-label">Fecha de fin</label>
+                                                <input type="text" class="form-control datepicker" id="txt-fecha-fin">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col my-2">
+                                        <button class="btn-gs-primary">Prioridad de proyecto</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col p-3">
+                                <div class="row row-cols-1 bg-gs-tertiary">
+                                    <div class="col my-2">
+                                        <div class="row row-cols-1 row-cols-md-2">
+                                            <div class="col">
+                                                <label for="txt-id-proyecto" class="form-label">ID Proyecto</label>
+                                                <input type="text" class="form-control" id="txt-id-proyecto">
+                                            </div>
+                                            <div class="col mt-auto">
+                                                <button class="btn-gs-primary">Buscar Proyecto</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-2">
+                                        <label for="txt-nombre-proyecto-dis" class="form-label">Nombre del proyecto</label>
+                                        <input type="text" class="form-control" id="txt-nombre-proyecto-dis" disabled>
+                                    </div>
+                                    <div class="col mb-2">
+                                        <label for="txt-desc-proy-dis" class="form-label">Descripción del proyecto</label>
+                                        <input type="text" class="form-control" id="txt-desc-proy-dis" disabled>
+                                    </div>
+                                    <div class="col mb-2">
+                                        <div class="row row-cols-1 row-cols-md-2">
+                                            <div class="col">
+                                                <label for="txt-fecha-creac" class="form-label">Fecha de creación</label>
+                                                <input type="text" class="form-control" id="txt-fecha-creac" placeholder="dd/mm/aaaa" disabled>
+                                            </div>
+                                            <div class="col">
+                                                <div class="row row-cols-2">
+                                                    <div class="col">
+                                                        <label for="txt-capex-dis" class="form-label">Capex</label>
+                                                        <input type="text" class="form-control" id="txt-capex-dis" disabled>
+                                                    </div>
+                                                    <div class="col">
+                                                        <label for="txt-opex-dis" class="form-label">Opex</label>
+                                                        <input type="text" class="form-control" id="txt-opex-dis" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <div class="row row-cols-1 row-cols-md-2">
+                                            <div class="col mt-auto">
+                                                <label for="txt-titular-proy" class="form-label">Pilar del proyecto</label>
+                                                <input type="text" class="form-control firma" id="txt-titular-proy">
+                                            </div>
+                                            <div class="col mt-auto">
+                                                <label for="txt-clasif-comite" class="form-label">Clasificación Comité de Inversión</label>
+                                                <input type="text" class="form-control firma" id="txt-clasif-comite">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-md-3">
+                            <div class="col">
+                                <label for="sel-responsables-proyecto" class="form-label">Responsables del proyecto</label>
+                                <select id="sel-responsables-proyecto" class="form-select" aria-label="Select de responsables del proyecto">
+                                    <option value="" selected disabled required>Agregar responsable del proyecto...</option>
+                                    <option value="1">DATO 1</option>
+                                    <option value="2">DATO 2</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="sel-admin-proyecto" class="form-label">Administrador</label>
+                                <select id="sel-admin-proyecto" class="form-select" aria-label="Select de administrador del proyecto">
+                                    <option value="" selected disabled required>Agregar administrador del proyecto...</option>
+                                    <option value="1">DATO 1</option>
+                                    <option value="2">DATO 2</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="sel-involuc-proyecto" class="form-label">Involucrados (opcional)</label>
+                                <select id="sel-involuc-proyecto" class="form-select" aria-label="Select de involucrados del proyecto">
+                                    <option value="" selected disabled>Agregar involucrados del proyecto...</option>
+                                    <option value="1">DATO 1</option>
+                                    <option value="2">DATO 2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row row-cols-1 mt-4">
+                            <div id="btn-enlace" class="col">
+                                <img src="./src/img/agregar.svg" alt="agregar etapa">
+                                <a class="btn-enlace" data-bs-toggle="modal" data-bs-target="#modal-etapa">
+                                    <span>Agregar etapa</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="row row-cols-1 px-3">
+                            <div class="col my-2">
+                                <button class="btn btn-primary"> Añadir usuario</button>
+                            </div>
+                            <div class="col my-2 p-3 bg-gs-table rounded border border-2 border-dark">
+                                <div class="row row-cols-1">
+                                    <div class="col table-responsive">
+                                        <table class="table overflow-hidden rounded">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col text-center">
+                                        <button class="btn btn-primary"> Añadir usuario</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="tab-pane fade" id="nav-plan" role="tabpanel" aria-labelledby="nav-plan-tab" tabindex="0">
+                        
+                    </div>
+
+                    <div class="modal fade" id="modal-etapa" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-etapa-label" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="modal-etapa-label">Modal etapa</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="fixed-bottom text-center bg-gs-footer">
+        <span class="me-4">Grupo Salinas</span><span class="font-gs-primary">|</span><span class="ms-4">Actualización septiembre 2024</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+.btn-nav
+{
+    border: none;
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    img{
+        height: 1.5rem;
+        width: auto;
+    }
+}
+
+.btn-nav:hover
+{
+    background-color: var(--gs-tertiary);
+    cursor: pointer;
+}
+
+.btn-gs-primary
+{
+    background-color: var(--gs-primary);
+    border: none;
+    color: black;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 3rem;
+}
+
+#btn-enlace
+{
+    cursor: pointer;
+    img{
+        height: 1.5rem;
+        width: auto;
+    }
+    a{
+        color: black;
+    }
+}
+
+input[type="text"].datepicker
+{
+    background-image: url(../img/calendario.svg);
+    background-size: 1.5rem;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+}
+
+input[type="text"].firma
+{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--gs-secondary);
+}
+
+input[type="text"].firma:focus
+{
+    border-bottom: 1px solid var(--gs-primary);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active.nav-gs
+{
+    border: none;
+    border-bottom: 4px solid var(--gs-primary);
+    font-size: large;
+}
+
+.nav-tabs .nav-link.nav-gs
+{
+    border: none;
+    border-bottom: 2px solid var(--gs-quaternary);
+    font-size: large;
+    color: var(--gs-secondary);
+}
+
+.font-gs-primary
+{
+    color: var(--gs-primary);
+    font-weight: bold;
+}
