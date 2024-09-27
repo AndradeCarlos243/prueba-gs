@@ -1,3 +1,4 @@
+import OpcionesPane from "./opcionesPane/OpcionesPane"
 import PaneDatos from "./paneDatos/PaneDatos"
 
 function TabPane() {
@@ -6,6 +7,7 @@ function TabPane() {
       <main className="container-fluid">
           <div className="row row-cols-1">
               <div className="col p-3">
+                  <OpcionesPane />
                   <div className="tab-content" id="nav-tabContent">
                     < PaneDatos />
                   </div>
