@@ -1,0 +1,40 @@
+{
+    "objetivos": [
+        {
+        "id": 1,
+        "titulo": "Objetivo 1",
+        "descripcion": "2021 CHGS Garantizar que los datos y estadística relacionada con gente estén actualizados, sistematizados y sean útiles para la toma de decisiones.",
+        "imagen": "https://via.placeholder.com/150"
+        },
+        {
+        "id": 2,
+        "titulo": "Objetivo 2",
+        "descripcion": "2021 CHGS Asegurar que los Directivos de unidades (negocios y despachos) gestionen con base en el modelo de alto desempeño para el logo eficiente.",
+        "imagen": "https://via.placeholder.com/150"
+        },
+        {
+        "id": 3,
+        "titulo": "Objetivo 3",
+        "descripcion": "2021 CH AyC. Gestionar a los equipos Directivos bajo el Modelo de Alto Desempeño cuidando la implementación de los 6 pasos.",
+        "imagen": "https://via.placeholder.com/150"
+        },
+        {
+        "id": 4,
+        "titulo": "Objetivo 4",
+        "descripcion": "CH BOFF Fortalecer una cultura de alto desempeño impulsando la adopción de modelo de los 6 pasos.",
+        "imagen": "https://via.placeholder.com/150"
+        },
+        {
+        "id": 5,
+        "titulo": "Objetivo 5",
+        "descripcion": "Totalplay Paso 6: Fomentar y consolidar el proceso de evaluación de desempeño en grupo Totalplay alineado al modelo de 6 pasos.",
+        "imagen": "https://via.placeholder.com/150"
+        },
+        {
+        "id": 6,
+        "titulo": "Objetivo 6",
+        "descripcion": "CH EKT. Implementar e impulsar la adopción del modelo de 6 pasos como componente clave de cultura de Elektra Marca. Conectividad, Innovación y Servicio.",
+        "imagen": "https://via.placeholder.com/150"
+        }
+    ]
+}
