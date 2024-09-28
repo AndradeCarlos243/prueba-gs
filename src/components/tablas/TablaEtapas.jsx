@@ -7,8 +7,6 @@ import {filas} from "../../data/filasEtapas"
 const paginationModel = { page: 0, pageSize: 5 };
 
 export default function TablaEtapas() {
-    console.log(filas)
-    console.log(columnas)
   return (
     <>
         <Paper sx={{ height: 400, width: '100%' }}>
