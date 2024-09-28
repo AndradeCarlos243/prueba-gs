@@ -7,7 +7,7 @@ function MenuSeleccionObjetivos() {
             <option value="0">Selecciona un objetivo</option>
             {objetivosData.map((objetivo) => {
                 return (
-                    <option key={objetivo.id} value={objetivo.id}>{objetivo.nombre}</option>
+                    <option key={objetivo.id} value={objetivo.id}>{objetivo.descripcion}</option>
                 )
             })}
         </select>

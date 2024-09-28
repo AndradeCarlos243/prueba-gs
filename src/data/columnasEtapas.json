@@ -1,0 +1,59 @@
+{
+    "columnas" : [
+    { 
+        "id": 1,
+        "field": "titulo", 
+        "headerName": "TITULO", 
+        "minWidth": 170,
+        "description": "This column has a value getter and is not sortable.",
+        "sortable": false
+    },
+    { 
+        "id": 2,
+        "field": "descripcion", 
+        "headerName": "DESCRIPCION", 
+        "minWidth": 170,
+        "description": "This column has a value getter and is not sortable.",
+        "sortable": false
+    },
+    { 
+        "id": 3,
+        "field": "entregable", 
+        "headerName": "ENTREGABLE", 
+        "minWidth": 170,
+        "description": "This column has a value getter and is not sortable.",
+        "sortable": false
+    },
+    { 
+        "id": 4,
+        "field": "fechaInicio", 
+        "headerName": "FECHA INICIO", 
+        "minWidth": 170,
+        "description": "This column has a value getter and is not sortable.",
+        "sortable": false
+    },
+    { 
+        "id": 5,
+        "field": "fechaFin", 
+        "headerName": "FECHA FIN", 
+        "minWidth": 170,
+        "description": "This column has a value getter and is not sortable.",
+        "sortable": false
+    },
+    { 
+        "id": 6,
+        "field": "editar", 
+        "headerName": "EDITAR", 
+        "minWidth": 170,
+        "description": "This column has a value getter and is not sortable.",
+        "sortable": false
+    },
+    { 
+        "id": 7,
+        "field": "eliminar", 
+        "headerName": "ELIMINAR", 
+        "minWidth": 170,
+        "description": "This column has a value getter and is not sortable.",
+        "sortable": false
+    }
+]}

@@ -1,0 +1,165 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Shinji",
+            "apellido": "Ikari",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 2,
+            "nombre": "Rei",
+            "apellido": "Ayanami",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 3,
+            "nombre": "Asuka",
+            "apellido": "Langley",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 4,
+            "nombre": "Kousei",
+            "apellido": "Arima",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 5,
+            "nombre": "Kaori",
+            "apellido": "Miyazono",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 6,
+            "nombre": "Miyuki",
+            "apellido": "Shirogane",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 7,
+            "nombre": "Kaguya",
+            "apellido": "Shinomiya",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 8,
+            "nombre": "Chika",
+            "apellido": "Fujiwara",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 9,
+            "nombre": "Yu",
+            "apellido": "Narukami",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 10,
+            "nombre": "Yosuke",
+            "apellido": "Hanamura",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 11,
+            "nombre": "Chie",
+            "apellido": "Satonaka",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 12,
+            "nombre": "Yukiko",
+            "apellido": "Amagi",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 13,
+            "nombre": "Rise",
+            "apellido": "Kujikawa",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 14,
+            "nombre": "Naoto",
+            "apellido": "Shirogane",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 15,
+            "nombre": "Makoto",
+            "apellido": "Niijima",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 16,
+            "nombre": "Futaba",
+            "apellido": "Sakura",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 17,
+            "nombre": "Haru",
+            "apellido": "Okumura",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 18,
+            "nombre": "Goro",
+            "apellido": "Akechi",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 19,
+            "nombre": "Kazuma",
+            "apellido": "Kiryu",
+            "administrador" : true,
+            "email": "",
+            "telefono": ""
+        },
+        {
+            "id": 20,
+            "nombre": "Goro",
+            "apellido": "Majima",
+            "administrador" : false,
+            "email": "",
+            "telefono": ""
+        }
+
+    ]
+}

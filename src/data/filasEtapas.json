@@ -1,0 +1,63 @@
+{
+    "filas" : [
+    { 
+        "id": 1,
+        "titulo": "dato", 
+        "descripcion": "dato", 
+        "entregable": "dato",
+        "fechaInicio": "dato",
+        "fechaFin": "dato",
+        "editar": false,
+        "eliminar": false
+    },
+    { 
+        "id": 2,
+        "titulo": "dato", 
+        "descripcion": "dato", 
+        "entregable": "dato",
+        "fechaInicio": "dato",
+        "fechaFin": "dato",
+        "editar": false,
+        "eliminar": false
+    },
+    { 
+        "id": 3,
+        "titulo": "dato", 
+        "descripcion": "dato", 
+        "entregable": "dato",
+        "fechaInicio": "dato",
+        "fechaFin": "dato",
+        "editar": false,
+        "eliminar": false
+    },
+    { 
+        "id": 4,
+        "titulo": "dato", 
+        "descripcion": "dato", 
+        "entregable": "dato",
+        "fechaInicio": "dato",
+        "fechaFin": "dato",
+        "editar": false,
+        "eliminar": false
+    },
+    { 
+        "id": 5,
+        "titulo": "dato", 
+        "descripcion": "dato", 
+        "entregable": "dato",
+        "fechaInicio": "dato",
+        "fechaFin": "dato",
+        "editar": false,
+        "eliminar": false
+    },
+    { 
+        "id": 6,
+        "titulo": "dato", 
+        "descripcion": "dato", 
+        "entregable": "dato",
+        "fechaInicio": "dato",
+        "fechaFin": "dato",
+        "editar": false,
+        "eliminar": false
+    }
+]}

@@ -1,5 +1,5 @@
 import MenuSeleccionObjetivos from "./menusSeleccion/menuSeleccionObjetivos"
-import DatePicker from "./datePickers/DatePicker"
+import DatePickerActivo from "./datePickers/DatePickerActivo"
 
 function FormularioProyectos() {
     return (
@@ -25,11 +25,11 @@ function FormularioProyectos() {
                 <div className="row row-cols-1 row-cols-md-2">
                     <div className="col">
                         <p className="form-label">Fecha de inicio</p>
-                        <DatePicker />
+                        <DatePickerActivo />
                     </div>
                     <div className="col">
                         <p className="form-label">Fecha de fin</p>
-                        <DatePicker />
+                        <DatePickerActivo />
                     </div>
                 </div>
             </div>

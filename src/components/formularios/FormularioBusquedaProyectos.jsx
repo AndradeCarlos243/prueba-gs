@@ -1,4 +1,4 @@
-import DatePicker from "./datePickers/DatePicker";
+import DatePickerInactivo from "./datePickers/DatePickerInactivo";
 
 function FormularioBusquedaProectos() {
     return (
@@ -27,7 +27,7 @@ function FormularioBusquedaProectos() {
                     <div className="row row-cols-1 row-cols-md-2">
                         <div className="col">
                             <p className="form-label">Fecha de creación</p>
-                            <DatePicker />
+                            <DatePickerInactivo />
                         </div>
                         <div className="col">
                             <div className="row row-cols-2">

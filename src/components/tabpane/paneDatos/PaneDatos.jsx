@@ -2,6 +2,7 @@ import FormularioBusquedaProectos from "../../formularios/FormularioBusquedaProy
 import FormularioParticipantes from "../../formularios/FormularioParticipantes"
 import FormularioProyectos from "../../formularios/FormularioProyectos"
 import BotonAgregarEtapa from "../../botones/BotonAgregarEtapa"
+import TablaEtapas from "../../tablas/TablaEtapas"
 
 function PaneDatos() {
     return (
@@ -17,7 +18,8 @@ function PaneDatos() {
                 </div>
 
                 <FormularioParticipantes />
-                < BotonAgregarEtapa />
+                <BotonAgregarEtapa />
+                <TablaEtapas />
             </div>
       </>
     )
