@@ -22,7 +22,6 @@ export default function TablaEtapas(propiedades) {
     setPage(0);
   };
   const gsTheme = createTheme({
-    
     components: {
       MuiTableCell: {
         styleOverrides: {
@@ -112,6 +111,7 @@ export default function TablaEtapas(propiedades) {
           page={page}
           onPageChange={handleChangePage}
           onRowsPerPageChange={handleChangeRowsPerPage}
+          id='select-rows-per-page'
           labelDisplayedRows={
             ({ from, to, count }) => {
               return 'Mostrando' + from + '-' + to + ' etapas de ' + count

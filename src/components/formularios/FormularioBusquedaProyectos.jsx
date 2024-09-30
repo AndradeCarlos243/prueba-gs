@@ -96,11 +96,11 @@ export default function FormularioBusquedaProyectos() {
                 </div>
                 <div className="col mb-3">
                     <div className="row row-cols-1 row-cols-md-2">
-                        <div className="col mt-auto">
+                        <div className="col mt-auto mb-2">
                             <label htmlFor="txt-titular-proy" className="form-label">Pilar del proyecto</label>
                             <input type="text" className="form-control firma" id="txt-titular-proy" value={pilarProyecto} readOnly disabled/>
                         </div>
-                        <div className="col mt-auto">
+                        <div className="col mt-auto mb-2">
                             <label htmlFor="txt-clasif-comite" className="form-label">Clasificación Comité de Inversión</label>
                             <input type="text" className="form-control firma" id="txt-clasif-comite" value={clasifComite} readOnly disabled/>
                         </div>

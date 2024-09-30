@@ -31,38 +31,38 @@ export default function FormularioParticipantes() {
 
   return (
     <>
-      <div className="row row-cols-1 row-cols-md-3 my-auto">
-          <div className="col mt-auto">
-              <MenuSeleccionUsuarios
-                data = {responsables}
-                labelId = "sel-responsable-proyecto-label"
-                value = {responsable}
-                label = "Responsable del proyecto"
-                onChange = {handleChangeResponsable}
-                name = "sel-responsable-proyecto"
-                id = "sel-responsable-proyecto"
-                />
-          </div>
-          <div className="col mt-auto">
-              <MenuSeleccionUsuarios
-                data = {administradores}
-                labelId = "sel-administrador-proyecto-label"
-                value = {administrador}
-                label = "Administrador del proyecto"
-                onChange = {handleChangeAdministrador}
-                name = "sel-administrador-proyecto"
-                id = "sel-administrador-proyecto"
+      <div className="row row-cols-1 row-cols-md-3 mx-auto my-2">
+          <div className="col mt-auto mb-3">
+            <MenuSeleccionUsuarios
+              data = {responsables}
+              labelId = "sel-responsable-proyecto-label"
+              value = {responsable}
+              label = "Responsable del proyecto"
+              onChange = {handleChangeResponsable}
+              name = "sel-responsable-proyecto"
+              id = "sel-responsable-proyecto"
               />
           </div>
-          <div className="col">
-              <MenuSeleccionMultiplesUsuarios 
-                value = {involucrados}
-                onChange = {handleChangeInvolucrados}
-                id = "sel-involucrados-proyecto"
-                label = "Involucrados (opcional)"
-                data = {dataUsuarios.usuarios}
+          <div className="col mt-auto mb-3">
+            <MenuSeleccionUsuarios
+              data = {administradores}
+              labelId = "sel-administrador-proyecto-label"
+              value = {administrador}
+              label = "Administrador del proyecto"
+              onChange = {handleChangeAdministrador}
+              name = "sel-administrador-proyecto"
+              id = "sel-administrador-proyecto"
+            />
+          </div>
+          <div className="col mb-2">
+            <MenuSeleccionMultiplesUsuarios 
+              value = {involucrados}
+              onChange = {handleChangeInvolucrados}
+              id = "sel-involucrados-proyecto"
+              label = "Involucrados (opcional)"
+              data = {dataUsuarios.usuarios}
 
-                />
+              />
           </div>
       </div>
     </>
