@@ -1,17 +1,13 @@
-import Navbar from "./navbar/Navbar"
-import TabPane from "./tabpane/TabPane"
-import Footer from "./footer/Footer"
-import Modal from "./modal/Modal"
+import Navbar from "./NavBar/Navbar"
+import TabPane from "./TabPane/TabPane"
+import Footer from "./Footer/Footer"
 
-function Componentes() {
+export default function Componentes() {
   return (
     <>
       <Navbar />
       <TabPane />
       <Footer />
-      <Modal />
     </>
   )
 }
-
-export default Componentes

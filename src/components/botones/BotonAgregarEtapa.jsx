@@ -1,15 +1,19 @@
-import agregar from '../../assets/agregar.svg'
+import agregar from '../../assets/svg/agregar.svg'
+import RetornaIcono from '../Iconos/RetornaIcono'
 
-function BotonAgregarEtapa() {
+function BotonAgregarEtapa(propiedades) {
     return (
       <>
         <div className="row row-cols-1">
-            <div id="btn-enlace" className="col my-4">
-                <img src={agregar} alt="agregar etapa" />
-                <a data-bs-toggle="modal" data-bs-target="#modal-etapa">
-                    <span>&nbsp;Agregar etapa</span>
-                </a>
-            </div>
+          <div id="btn-enlace" className="col my-4">
+            <RetornaIcono
+              src={agregar}
+              alt="Agregar etapa"
+            />
+            <a onClick={propiedades.accion}>
+              <span>&nbsp;Agregar etapa</span>
+            </a>
+          </div>
         </div>
       </>
     )

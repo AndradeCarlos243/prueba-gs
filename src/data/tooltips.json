@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "id": "fec-ini",
+            "titulo": "Fecha de inicio",
+            "descripcion": "La fecha en la que inicia el proyecto."
+        },
+        {
+            "id": "fec-fin",
+            "titulo": "Fecha de finalización",
+            "descripcion": "La fecha en la que finaliza el proyecto."
+        },
+        {
+            "id": "ayu-pro",
+            "titulo": "Ayuda para buscar proyectos",
+            "descripcion": "Intenta con proyecto-1, proyecto-2, 3..."
+        },
+        {
+            "id": "fec-ini-et",
+            "titulo": "Fecha de inicio",
+            "descripcion": "La fecha en la que inicia la etapa."
+        },
+        {
+            "id": "fec-fin-et",
+            "titulo": "Fecha de finalización",
+            "descripcion": "La fecha en la que finaliza la etapa."
+        },
+        {
+            "id": "ayu-ent",
+            "titulo": "Ayuda para entregables",
+            "descripcion": "Para saber si la etapa tiene entregables, revisa la columna 'Entregable'."
+        },
+        {
+            "id": "kolog",
+            "titulo": "Es peligroso ir solo, toma esto",
+            "descripcion": "Acaso hay algo escondido aquí...?"
+        }
+    ]
+}

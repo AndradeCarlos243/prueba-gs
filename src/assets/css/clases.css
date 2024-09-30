@@ -1,3 +1,39 @@
+.bg-gs-primary
+{
+    background-color: var(--gs-primary);
+}
+
+.bg-gs-secondary
+{
+    background-color: var(--gs-secondary);
+}
+
+.bg-gs-tertiary
+{
+    background-color: var(--gs-tertiary);
+}
+
+.bg-gs-quaternary
+{
+    background-color: var(--gs-quaternary);
+}
+
+.bg-gs-footer
+{
+    background-color: #f1f1f1;
+}
+
+.tit-gs
+{
+    text-align: start;
+    border-bottom: solid .1rem var(--gs-primary);
+}
+
+.btn-gs-primary
+{
+    background-color: var(--gs-primary)!important;
+}
+
 .btn-nav
 {
     border: none;

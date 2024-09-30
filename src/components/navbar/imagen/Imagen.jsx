@@ -1,15 +1,14 @@
-import imagenUsuario from '../../../assets/carlos_andrade.jpg'
+import { Avatar } from '@mui/material'
+import imagenUsuario from '../../../assets/img/carlos_andrade.jpg'
 
-function Imagen() {
-    return (
-      <>
-        <div className="me-0 ms-auto">
-            <a className="btn-nav">
-                <img id="img-usuario" src={imagenUsuario} className="rounded-circle border border-secondary" alt="..." />
-            </a>
-        </div>
-      </>
-    )
-  }
-  
-  export default Imagen
+export default function Imagen() {
+  return (
+    <>
+      <Avatar
+        alt="Carlos Andrade"
+        src={imagenUsuario}
+        sx={{ width: 50, height: 50 }}
+      />
+    </>
+  )
+}

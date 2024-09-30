@@ -1,0 +1,64 @@
+{
+    "data" : [
+        {
+            "id": "proyecto-1",
+            "nombreProyecto": "Proyecto 1",
+            "descripcionProyecto": "Descripción del proyecto 1.",
+            "fechaCreacion": "27-09-2024",
+            "capex": "Capex 1",
+            "opex": "Opex 1",
+            "pilarProyecto": "Pilar 1",
+            "clasifComite": "Clasificacion 1"
+        },
+        {
+            "id": "proyecto-2",
+            "nombreProyecto": "Proyecto 2",
+            "descripcionProyecto": "Descripción del proyecto 2.",
+            "fechaCreacion": "27-09-2024",
+            "capex": "Capex 2",
+            "opex": "Opex 2",
+            "pilarProyecto": "Pilar 2",
+            "clasifComite": "Clasificacion 2"
+        },
+        {
+            "id": "proyecto-3",
+            "nombreProyecto": "Proyecto 3",
+            "descripcionProyecto": "Descripción del proyecto 3.",
+            "fechaCreacion": "27-09-2024",
+            "capex": "Capex 3",
+            "opex": "Opex 3",
+            "pilarProyecto": "Pilar 3",
+            "clasifComite": "Clasificacion 3"
+        },
+        {
+            "id": "proyecto-4",
+            "nombreProyecto": "Proyecto 4",
+            "descripcionProyecto": "Descripción del proyecto 4.",
+            "fechaCreacion": "27-09-2024",
+            "capex": "Capex 4",
+            "opex": "Opex 4",
+            "pilarProyecto": "Pilar 4",
+            "clasifComite": "Clasificacion 4"
+        },
+        {
+            "id": "proyecto-5",
+            "nombreProyecto": "Proyecto 5",
+            "descripcionProyecto": "Descripción del proyecto 5.",
+            "fechaCreacion": "27-09-2024",
+            "capex": "Capex 5",
+            "opex": "Opex 5",
+            "pilarProyecto": "Pilar 5",
+            "clasifComite": "Clasificacion 5"
+        },
+        {
+            "id": "proyecto-6",
+            "nombreProyecto": "Proyecto 6",
+            "descripcionProyecto": "Descripción del proyecto 6.",
+            "fechaCreacion": "27-09-2024",
+            "capex": "Capex 6",
+            "opex": "Opex 6",
+            "pilarProyecto": "Pilar 6",
+            "clasifComite": "Clasificacion 6"
+        }
+    ]
+}

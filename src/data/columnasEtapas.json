@@ -1,59 +1,45 @@
 {
     "columnas" : [
     { 
-        "id": 1,
-        "field": "titulo", 
-        "headerName": "TITULO", 
+        "id": "titulo",
+        "label": "TITULO",
         "minWidth": 170,
-        "description": "This column has a value getter and is not sortable.",
-        "sortable": false
+        "align": "right"
     },
     { 
-        "id": 2,
-        "field": "descripcion", 
-        "headerName": "DESCRIPCION", 
+        "id": "descripcion",
+        "label": "DESCRIPCION",
         "minWidth": 170,
-        "description": "This column has a value getter and is not sortable.",
-        "sortable": false
+        "align": "right"
     },
     { 
-        "id": 3,
-        "field": "entregable", 
-        "headerName": "ENTREGABLE", 
+        "id": "entregable",
+        "label": "ENTREGABLE",
         "minWidth": 170,
-        "description": "This column has a value getter and is not sortable.",
-        "sortable": false
+        "align": "right"
     },
     { 
-        "id": 4,
-        "field": "fechaInicio", 
-        "headerName": "FECHA INICIO", 
+        "id": "fechaInicio",
+        "label": "FECHA INICIO",
         "minWidth": 170,
-        "description": "This column has a value getter and is not sortable.",
-        "sortable": false
+        "align": "right"
     },
     { 
-        "id": 5,
-        "field": "fechaFin", 
-        "headerName": "FECHA FIN", 
+        "id": "fechaFin",
+        "label": "FECHA FIN",
         "minWidth": 170,
-        "description": "This column has a value getter and is not sortable.",
-        "sortable": false
+        "align": "right"
     },
     { 
-        "id": 6,
-        "field": "editar", 
-        "headerName": "EDITAR", 
+        "id": "editar",
+        "label": "EDITAR",
         "minWidth": 170,
-        "description": "This column has a value getter and is not sortable.",
-        "sortable": false
+        "align": "right"
     },
     { 
-        "id": 7,
-        "field": "eliminar", 
-        "headerName": "ELIMINAR", 
+        "id": "eliminar",
+        "label": "ELIMINAR",
         "minWidth": 170,
-        "description": "This column has a value getter and is not sortable.",
-        "sortable": false
+        "align": "right"
     }
 ]}
