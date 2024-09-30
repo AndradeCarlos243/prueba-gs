@@ -1,8 +1,6 @@
-# React + Vite
+# PRUEBA PARA GS EN REACT.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El archivo no cuenta con bases de datos, por lo que solo requiere ser descargado, descargar las dependencias y lanzarlo.
+Este proyecto es una prueba para tener la oportunidad de participar en una empresa.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Carlos Alberto Andrade López.
