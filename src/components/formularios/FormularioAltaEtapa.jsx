@@ -6,11 +6,11 @@ import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import Tooltip from "../Tooltips/Tooltips";
 
 export default function FormularioAltaEtapa(propiedades) {
-  const [titulo, setTitulo] = useState("");
-  const [descripcion, setDescripcion] = useState("");
-  const [entregable, setEntregable] = useState("");
-  const [fechaInicio, setFechaInicio] = useState(dayjs().format("YYYY-MM-DD"));
-  const [fechaFin, setFechaFin] = useState(dayjs().format("YYYY-MM-DD"));
+  const [titulo, setTitulo] = useState(propiedades.tipo === "editar" ? propiedades.etapa.titulo : "");
+  const [descripcion, setDescripcion] = useState(propiedades.tipo === "editar" ? propiedades.etapa.descripcion : "");
+  const [entregable, setEntregable] = useState(propiedades.tipo === "editar" ? propiedades.etapa.entregable : "");
+  const [fechaInicio, setFechaInicio] = useState(propiedades.tipo === "editar" ? propiedades.etapa.fechaInicio : dayjs().format("YYYY-MM-DD"));
+  const [fechaFin, setFechaFin] = useState(propiedades.tipo === "editar" ? propiedades.etapa.fechaFin : dayjs().format("YYYY-MM-DD"));
 
   function handleTituloChange(e) {
     setTitulo(e.target.value);
@@ -122,7 +122,7 @@ export default function FormularioAltaEtapa(propiedades) {
                   id="fec-inicio"
                   value={fechaInicio}
                   setValue={handleFechaInicioChange}
-                  label = "Fecha de fin"
+                  label = "Fecha de inicio"
                 />
               </div>
               <div className="col mb-2 mt-auto">
