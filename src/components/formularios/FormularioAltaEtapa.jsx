@@ -88,6 +88,10 @@ export default function FormularioAltaEtapa(propiedades) {
                 <TextField
                 required
                 id="txt-descripcion"
+                name="txt-descripcion"
+                itemProp={{
+                  id: "id-multilinea"
+                }}
                 label="Descripción"
                 value={descripcion}
                 onChange={handleDescripcionChange}
@@ -99,10 +103,13 @@ export default function FormularioAltaEtapa(propiedades) {
               <div className="col mb-2 mt-auto">
                 <p className="form-label">Entregable de la etapa: <span className="text-danger">*</span> <Tooltip id="ayu-ent"/></p>
                 <FormControl sx={{minWidth: 120 }} size="small" fullWidth>
-                  <InputLabel id="entregable-proyecto-label">Entregable</InputLabel>
+                  <InputLabel id="entregable-proyecto-label" htmlFor="sel-entregable">Entregable</InputLabel>
                   <Select
                     labelId="entregable-proyecto-label"
-                    id="sel-entregable"
+                    inputProps={{
+                      id: "sel-entregable",
+                      name: "sel-entregable",
+                    }}
                     value={entregable}
                     label="Entregable"
                     onChange={handleEntregableChange}
@@ -136,7 +143,7 @@ export default function FormularioAltaEtapa(propiedades) {
               </div>
             </div>
             <div className="row row-cols-1 row-cols-md-2 mb-2 mt-auto">
-              <div className="col">
+              <div className="col my-2 my-md-0">
                 <button 
                   type="button" 
                   onClick={propiedades.onCancel}
@@ -145,7 +152,7 @@ export default function FormularioAltaEtapa(propiedades) {
                   {propiedades.tipo === "agregar" ? "Cancelar" : propiedades.tipo === "editar" ? "Cancelar" : null}
                 </button>
               </div>
-              <div className="col">
+              <div className="col my-2 my-md-0">
                 <button 
                   type="submit"
                   className="btn-gs-primary form-control"

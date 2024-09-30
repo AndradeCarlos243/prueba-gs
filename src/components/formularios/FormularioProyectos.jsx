@@ -92,7 +92,7 @@ function FormularioProyectos() {
                     </div>
                     <div className="col mb-2">
                         <div className="row row-cols-1 row-cols-md-2">
-                            <div className="col">
+                            <div className="col mb-2">
                                 <p className="form-label">Fecha de inicio <Tooltip id="fec-ini" /></p>
                                 <DatePickerGS 
                                     id="fec-ini"
@@ -101,7 +101,7 @@ function FormularioProyectos() {
                                     label = "Fecha de inicio"
                                 />
                             </div>
-                            <div className="col">
+                            <div className="col mb-2">
                                 <p className="form-label">Fecha de fin <Tooltip id="fec-fin" /></p>
                                 <DatePickerGS 
                                     id="fec-fin"

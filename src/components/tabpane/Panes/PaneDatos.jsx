@@ -82,7 +82,7 @@ export default function PaneDatos() {
                 />
                 {etapas.length > 0 && (
                     <div className="row p-3 mx-auto form-control">
-                        <div className="col p-3">
+                        <div className="col p-1 p-md-3">
                             <h4>Etapas</h4>
                             <TablaEtapas
                                 etapas={etapas}
