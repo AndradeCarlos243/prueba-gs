@@ -1,12 +1,10 @@
 {
-  "homepage": "https://AndradeCarlos243.github.io/prueba-gs",
   "name": "prueba-gs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
