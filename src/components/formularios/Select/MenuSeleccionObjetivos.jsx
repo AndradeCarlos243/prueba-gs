@@ -36,6 +36,9 @@ export default function MenuSeleccionObjetivos(propiedades) {
             },
             "&& .Mui-selected": {
               backgroundColor: "#ffe390",
+              "&:hover": {
+                backgroundColor: "#fff4d3",
+              },
             },
           },
         },
@@ -48,6 +51,9 @@ export default function MenuSeleccionObjetivos(propiedades) {
             whiteSpace: 'nowrap',
             textOverflow: 'ellipsis',
             containerType: 'inline-size',
+            "&:hover": {
+              backgroundColor: "#fff4d3",
+            }
           },
         },
       },

@@ -4,6 +4,7 @@ import DatePickerGS from './DatePickers/DatePickerGS';
 import dayjs from "dayjs";
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import Tooltip from "../Tooltips/Tooltips";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 export default function FormularioAltaEtapa(propiedades) {
   const [titulo, setTitulo] = useState(propiedades.tipo === "editar" ? propiedades.etapa.titulo : "");
@@ -11,6 +12,62 @@ export default function FormularioAltaEtapa(propiedades) {
   const [entregable, setEntregable] = useState(propiedades.tipo === "editar" ? propiedades.etapa.entregable : "");
   const [fechaInicio, setFechaInicio] = useState(propiedades.tipo === "editar" ? propiedades.etapa.fechaInicio : dayjs().format("YYYY-MM-DD"));
   const [fechaFin, setFechaFin] = useState(propiedades.tipo === "editar" ? propiedades.etapa.fechaFin : dayjs().format("YYYY-MM-DD"));
+
+  const gsTheme = createTheme({
+    select: {
+      '&:before': {
+          borderColor: 'white',
+      },
+      '&:after': {
+          borderColor: 'white',
+      },
+      '&:not(.Mui-disabled):hover::before': {
+          borderColor: 'white',
+      },
+    },
+    components: {
+      MuiPaper: {
+        styleOverrides: {
+          root: {
+            fontSize: '.5rem',
+            textAlign: 'left',
+            color: 'black',
+            height: '20%',
+            '&::-webkit-scrollbar': {
+              width: '0.7em',
+            },
+            '&::-webkit-scrollbar-track': {
+              boxShadow: 'inset 0 0 6px rgba(0,0,0,0.00)',
+            },
+            '&::-webkit-scrollbar-thumb': {
+              backgroundColor: '#febd00',
+              BorderRadius: '10px',
+            },
+            "&& .Mui-selected": {
+              backgroundColor: "#ffe390",
+              "&:hover": {
+                backgroundColor: "#fff4d3",
+              },
+            },
+          },
+        },
+      },
+      MuiMenuItem: {
+        styleOverrides: {
+          root: {
+            display: 'block',
+            overflow: 'hidden',
+            whiteSpace: 'nowrap',
+            textOverflow: 'ellipsis',
+            containerType: 'inline-size',
+            "&:hover": {
+              backgroundColor: "#fff4d3",
+            }
+          },
+        },
+      },
+    },
+  });
 
   function handleTituloChange(e) {
     setTitulo(e.target.value);
@@ -104,23 +161,25 @@ export default function FormularioAltaEtapa(propiedades) {
                 <p className="form-label">Entregable de la etapa: <span className="text-danger">*</span> <Tooltip id="ayu-ent"/></p>
                 <FormControl sx={{minWidth: 120 }} size="small" fullWidth>
                   <InputLabel id="entregable-proyecto-label" htmlFor="sel-entregable">Entregable</InputLabel>
-                  <Select
-                    labelId="entregable-proyecto-label"
-                    inputProps={{
-                      id: "sel-entregable",
-                      name: "sel-entregable",
-                    }}
-                    value={entregable}
-                    label="Entregable"
-                    onChange={handleEntregableChange}
-                    required
-                  >
-                    <MenuItem value="">
-                      <em>Selecciona un tipo</em>
-                    </MenuItem>
-                    <MenuItem value="entregable">Entregable</MenuItem>
-                    <MenuItem value="no-entregable">No entregable</MenuItem>
-                  </Select>
+                    <ThemeProvider theme={gsTheme}>
+                      <Select
+                        labelId="entregable-proyecto-label"
+                        inputProps={{
+                          id: "sel-entregable",
+                          name: "sel-entregable",
+                        }}
+                        value={entregable}
+                        label="Entregable"
+                        onChange={handleEntregableChange}
+                        required
+                      >
+                        <MenuItem value="">
+                          <em>Selecciona un tipo</em>
+                        </MenuItem>
+                        <MenuItem value="entregable">Entregable</MenuItem>
+                        <MenuItem value="no-entregable">No entregable</MenuItem>
+                      </Select>
+                  </ThemeProvider>
                 </FormControl>
               </div>
               <div className="col mb-2 mt-auto">
