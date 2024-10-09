@@ -120,7 +120,7 @@ export default function TablaEtapas(propiedades) {
           labelRowsPerPage={'Etapas por página'}
         />
       </Paper>
-      <BotonAgregarEtapa />
+      <BotonAgregarEtapa accion={propiedades.accionAltaEtapa}/>
     </>
   );
 }

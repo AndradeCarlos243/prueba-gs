@@ -88,6 +88,7 @@ export default function PaneDatos() {
                                 etapas={etapas}
                                 handleEditar={handleEditar}
                                 handleEliminar={handleEliminar}
+                                accionAltaEtapa={() => handleMostrarModal("agregar")}
                             />
                         </div>
                     </div>
